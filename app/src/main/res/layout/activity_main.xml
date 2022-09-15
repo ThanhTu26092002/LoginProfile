@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+    <!--    tools:context=".DangNhap">-->
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:onClick="checkLogin"
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="@+id/edPassword"
+        app:layout_constraintStart_toStartOf="@+id/edPassword"
+        app:layout_constraintTop_toBottomOf="@+id/edPassword"
+        tools:ignore="UnknownId" />
+
+    <EditText
+        android:id="@+id/edUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="234dp"
+        android:ems="10"
+        android:hint="UserName"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/edPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="1dp"
+        android:ems="10"
+        android:hint="PassWord"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/edUserName"
+        app:layout_constraintTop_toBottomOf="@+id/edUserName" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/z3699411504352_436c18dbd097b6fa4154b541c1308e77" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:onClick="checkSignUp"
+        android:text="Sign Up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
